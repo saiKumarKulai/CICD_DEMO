@@ -1,4 +1,4 @@
-name: CICD using Git actions and heroku
+name: CICD using Git actions and herokuu
 
 on:
   push:
