@@ -16,7 +16,7 @@ jobs:
       - name: build and test
         run:  cd Demoo | pwd
       - name: pwd
-        run:  pwd
+        run:  tree
       - name: Deploying to heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
