@@ -15,14 +15,11 @@ jobs:
         uses: actions/checkout@v3
       - name: tree
         run: tree
+      - name: cd temp
+        run: cd temp
       - name: touch
-        run: touch abc.txt |
-              cd Demoo
-      - name: cd Demoo and touch
-        run : cd Demoo |
-              touch def.txt
+        run : touch def.txt
       - name: tree
-        run: pwd | 
-            tree
+        run: tree
 
 
