@@ -16,10 +16,11 @@ jobs:
       - name: tree
         run: tree
       - name: pwd
-        run: pwd
+        run: touch abc.txt
       - name: cd Demoo
-        run : cd ./Demoo
+        run : tree
       - name: tree
-        run: pwd | tree
+        run: pwd | 
+            tree
 
 
