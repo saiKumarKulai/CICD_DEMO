@@ -13,8 +13,10 @@ jobs:
     steps:
       - name: CheckOut Moving code from github to VM
         uses: actions/checkout@v3
+      - name: Dir
+        run: echo pwd
       - name: build and test
-        run: cd pwd/Demoo | mvn clean install
+        run:  mvn clean install
       - name: Deploying to heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
