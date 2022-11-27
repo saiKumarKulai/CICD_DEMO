@@ -13,12 +13,13 @@ jobs:
     steps:
       - name: CheckOut Moving code from github to VM
         uses: actions/checkout@v3
-      - name: pwd | 
-              tree
-        run: cd Demoo | 
-              tree
-      - name: build and test
-        run:  mvn clean install
+      - name: tree
+        run: tree
       - name: pwd
-        run:  tree
+        run: pwd
+      - name: cd Demoo
+        run : cd Demoo
+      - name: tree
+        run: tree
+
 
