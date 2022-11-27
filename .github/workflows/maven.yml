@@ -16,7 +16,8 @@ jobs:
       - name: tree
         run: tree
       - name: touch
-        run: touch abc.txt
+        run: touch abc.txt |
+              mkdir Demoo
       - name: cd Demoo and touch
         run : cd Demoo |
               touch def.txt
