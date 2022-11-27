@@ -18,9 +18,8 @@ jobs:
       - name: pwd
         run: pwd
       - name: cd Demoo
-        run : cd Demoo |
-              pwd
+        run : cd ./Demoo
       - name: tree
-        run: tree
+        run: pwd | tree
 
 
