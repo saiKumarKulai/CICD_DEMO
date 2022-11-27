@@ -17,7 +17,8 @@ jobs:
         run: tree
       - name: pwd
         run: touch abc.txt
-      - name: cd Demoo
+      - name: cd Demoo |
+              touch def.txt
         run : tree
       - name: tree
         run: pwd | 
